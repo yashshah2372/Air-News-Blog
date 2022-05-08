@@ -217,3 +217,29 @@ ul.list li a:hover {
     background: var(--light-color);
     color: var(--dark-color);
 }
+
+#showcase{
+    position: relative;
+    background: url('../images/featured.jpg')center center;
+    background-size: cover;
+}
+#showcase:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+#showcase .container{
+    display: grid;
+    min-height: 70vh;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.showcase-content{
+    z-index: 1;
+    color: #fff;
+}
