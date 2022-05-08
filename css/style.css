@@ -243,3 +243,20 @@ ul.list li a:hover {
     z-index: 1;
     color: #fff;
 }
+.articles-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+.article-grid-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
+.article-grid-card:first-child{
+    grid-column: 1/span 2;
+}
+.article-grid-card:last-child{
+    grid-column: 2/span 2;
+}
