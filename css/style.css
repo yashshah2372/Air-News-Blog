@@ -280,3 +280,11 @@ ul.list li a:hover {
     padding: .5rem;
     font-size: .85rem;
 }
+#about .page-content{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 2rem;
+}
+#about .page-content>*:first-child{
+    grid-row: 1/span 4;
+}
