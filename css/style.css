@@ -129,7 +129,20 @@ ul.list li a:hover {
     color: var(--primary-color);
 }
 
-
+/*******Category******
+************************/
+.category{
+    display: inline-block;
+    color: #fff;
+    font-size: .55rem;
+    text-transform: uppercase;
+    padding: .4rem .6rem;
+    border-radius: 15px;
+    margin-bottom: .5rem;
+}
+.category-sports{background-color: var(--category-sports);}
+.category-tech{background-color: var(--category-tech);}
+.category-ent{background-color: var(--category-ent);}
 /****************************************************************************************************
 ************************************ BUTTONS CLASSES ************************************************
 ****************************************************************************************************/
