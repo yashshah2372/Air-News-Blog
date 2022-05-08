@@ -164,4 +164,43 @@ ul.list li a:hover {
     transition: opacity .3s;
     cursor: pointer;
 }
-
+.navbar{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    padding: 1rem;
+}
+.navbar .container{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+}
+.navbar .logo{
+    max-width: 180px;
+}
+.socials a{
+    padding: .75rem;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-links li a{
+    padding: .75rem;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.nav-links li a:last-child{
+    margin-right: 0;
+}
+.nav-links li a.active{
+    background: var(--primary-color);
+    color: #fff;
+}
+.nav-links li a:hover{
+    background: var(--light-color);
+    color: var(--dark-color);
+}
